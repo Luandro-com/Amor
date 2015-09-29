@@ -1,1 +1,83 @@
+body {
+  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+  padding: 0;
+  margin: 0;
+  background: url('../images/light_noise_diagonal.png')
+}
+h1,h2,h3,h4,h5,h6,p {
+ line-height: 1.45;
+}
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.headroom--unpinned {top: -100px;}
+.headroom--pinned {top: 0;}
+.center {
+  text-align: center;
+}
+.amor-date {
+  font-family: 'Dancing Script', cursive;
+  padding-top: 30px;
+  clear: both;
+  display: inline-block;
+  text-align: center;
+}
+.amor-date .updated {
+  margin-top: 3px;
+}
+.long-deco, .long-deco-inverse {
+  width: 100px;
+  height: 30px;
+  background: url('../images/long_deco.svg') no-repeat;
+  line-height: 3px;
+}
+.long-deco-inverse {
+  transform: scale(-1, 1);
+}
+.amor-boxed {
+  border: 1px solid $dourado;
+  padding: 10px;
+  height: 70px;
+}
+.amor-inner-box {
+  border: 1px solid $dourado;
+  background: url('../images/checkered_pattern.png');
+  height: 50px;
+}
+
+.amor-inner-box h4 {
+  font-family: 'Dancing Script', cursive;
+  padding: 0 10px;
+}
+
+
+.entry-title {
+  text-align: center;
+}
+.amor-flower-deco {
+  float: left;
+}
+.entry-title a {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  margin-left: -44px;
+}
+.post {
+  border: 1px solid $dourado;
+  padding: 10px 4px;
+}
+.post header {
+  padding: 15px 10px;
+  background: url('../images/debut_dark.png');
+}
+.post .border {
+  background: url('../images/border.svg');
+  height: 4px;
+  width: 100%;
+  margin-top: -4px;
+}
+.entry-summary {
+  padding: 15px 0;
+}
 

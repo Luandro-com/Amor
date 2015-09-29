@@ -19,6 +19,11 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $('body').flowtype({
+         minimum : 500,
+         maximum : 1200
+        });
+        $('.navbar').headroom();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

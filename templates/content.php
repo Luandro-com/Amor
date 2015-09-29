@@ -1,9 +1,11 @@
+<?php get_template_part('templates/entry-meta'); ?>
 <article <?php post_class(); ?>>
   <header>
+    <img class="amor-flower-deco" src="<?= get_template_directory_uri() . '/dist/images/flower_deco.svg'; ?>">
     <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-    <?php get_template_part('templates/entry-meta'); ?>
   </header>
+  <div class="border"></div>
   <div class="entry-summary">
-    <?php the_excerpt(); ?>
+    <?php the_content(); ?>
   </div>
 </article>
