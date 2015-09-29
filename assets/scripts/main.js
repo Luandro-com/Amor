@@ -24,6 +24,8 @@
          maximum : 1200
         });
         $('.navbar').headroom();
+        // Menu onClick, fade in, animate enter each <li>
+        $('.btn-navbar').on('click', console.log("clicked:"));
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

@@ -8,4 +8,7 @@
   <div class="entry-summary">
     <?php the_content(); ?>
   </div>
+  <div class="post-footer">
+    <img src="<?= get_template_directory_uri() . '/dist/images/flower_deco_2.svg'; ?>" height="43px" />
+  </div>
 </article>

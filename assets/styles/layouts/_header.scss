@@ -1,7 +1,11 @@
 .mobile-header {
   background: url('../images/background.jpg') no-repeat center/cover;
+  @media (min-width: 600px) {
+    background: url('../images/background_BIG.jpg') no-repeat center/cover;
+  }
   height: 300px;
   width: 100%;
+  text-align: center;
 }
 .mobile-header img {
   margin-top: 100px;
@@ -9,6 +13,7 @@
 .btn-navbar {
   height: 35px;
   background: url('../images/menu.svg') no-repeat center/contain;
+  float: right;
 }
 .navbar {
   background: $rosa !important;
@@ -21,4 +26,26 @@
 }
 .nav-collapse a {
   color: white;
+}
+//Page-header
+.amor-boxed {
+  border: 1px solid $dourado;
+  padding: 10px;
+  height: 70px;
+}
+.amor-inner-box {
+  border: 1px solid $dourado;
+  background: url('../images/checkered_pattern.png');
+  height: 50px;
+}
+.amor-inner-box img {
+  float: right;
+  height: 20px;
+  @media (min-width: 480px) {
+    height: 28px;
+  }
+}
+.amor-inner-box h4 {
+  font-family: 'Dancing Script', cursive;
+  padding: 0 10px;
 }

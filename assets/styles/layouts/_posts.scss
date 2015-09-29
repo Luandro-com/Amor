@@ -1,0 +1,59 @@
+.amor-date {
+  font-family: 'Dancing Script', cursive;
+  padding-top: 30px;
+  clear: both;
+  display: inline-block;
+  text-align: center;
+}
+.amor-date .updated {
+  margin-top: 3px;
+}
+.long-deco, .long-deco-inverse {
+  width: 100px;
+  height: 30px;
+  background: url('../images/long_deco.svg') no-repeat;
+  line-height: 3px;
+}
+.long-deco-inverse {
+  transform: scale(-1, 1);
+}
+.entry-title {
+  text-align: center;
+}
+.amor-flower-deco {
+  float: left;
+}
+.entry-title a, .entry-title {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  margin-left: -44px;
+}
+.post {
+  border: 1px solid $dourado;
+  padding: 10px 4px;
+}
+.post header {
+  padding: 15px 10px;
+  background: url('../images/debut_dark.png');
+}
+.post .border {
+  background: url('../images/border.svg');
+  height: 4px;
+  width: 100%;
+  margin-top: -4px;
+}
+.entry-summary {
+  padding: 15px;
+  @media (min-width: 768px) {
+    padding: 5rem 3rem;
+  }
+}
+.post-footer {
+  border-top: 1px dashed #979797;
+  height: 80px;
+  padding: 15px 5px;
+}
+.post-footer img {
+  float: right;
+  margin-top: 20px;
+}

@@ -6,6 +6,7 @@
     <div class="col-xs-9">
       <div class="amor-boxed">
         <div class="amor-inner-box">
+          <img src="<?= get_template_directory_uri() . '/dist/images/leaf_deco.svg'; ?>" height="20px" />
           <h4>Guia de Fornecedores</h4>
         </div>
       </div>
