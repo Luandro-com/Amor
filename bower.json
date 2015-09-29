@@ -10,7 +10,8 @@
     "modernizr": "2.8.2",
     "bootstrap-sass": "3.3.5",
     "headroom.js": "~0.7.0",
-    "Flowtype.js": "flowtype#~1.1.0"
+    "Flowtype.js": "flowtype#~1.1.0",
+    "slick-carousel": "~1.5.8"
   },
   "overrides": {
     "modernizr": {
@@ -42,6 +43,15 @@
       "main": [
         "./dist/headroom.min.js",
         "./dist/jQuery.headroom.min.js"
+      ]
+    },
+    "slick-carousel": {
+      "main": [
+        "slick/slick.min.js",
+        "slick/slick.css",
+        "slick/slick-theme.css",
+        "slick/fonts/*",
+        "slick/ajax-loader.gif"
       ]
     }
   }

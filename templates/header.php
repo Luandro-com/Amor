@@ -9,7 +9,7 @@
         <?php endif; ?>
     </div>
   </a>
-  <nav class="navbar">
+  <nav class="navbar mobile">
     <div class="navbar-inner">
       <div class="container">
         <a class="brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?= get_template_directory_uri() . '/dist/images/logo_white_small.svg'; ?>"></a>

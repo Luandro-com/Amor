@@ -19,11 +19,22 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        // Flowtype for responsive font size
         $('body').flowtype({
          minimum : 500,
          maximum : 1200
         });
+        //Smart navbar with headroom
         $('.navbar').headroom();
+        //Slick Carousel
+        $('.amor-carousel').slick({
+          dots: true,
+          arrows: false,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear',
+          mobileFirst: true
+        });
         // Menu onClick, fade in, animate enter each <li>
         $('.btn-navbar').on('click', console.log("clicked:"));
       },
