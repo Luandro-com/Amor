@@ -1,0 +1,29 @@
+footer {
+  text-align: center;
+  clear: both;
+  padding: 30px 0;
+  .luandro {
+    font-size: 0.4em;
+    font-family: 'Dancing Script', cursive;
+    color: $dourado;
+    padding: 8rem 0;
+  }
+  .luandro a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: green;
+    content: "";
+    transition: all 0.5s ease;
+  }
+  .luandro:hover {
+    text-decoration: none;
+    color: green;
+  }
+  .luandro a:hover:after {
+    width: 100%;
+  }
+}

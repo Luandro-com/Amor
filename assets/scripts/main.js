@@ -38,6 +38,8 @@
           cssEase: 'linear',
           mobileFirst: true
         });
+        //Sticky sidebar
+        $('.sidebar').stick_in_parent();
         // Menu onClick, fade in, animate enter each <li>
         $('.btn-navbar').click(function() {
           $('.mobile-menu').show("slow");
