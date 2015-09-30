@@ -37,7 +37,10 @@
         });
         // Menu onClick, fade in, animate enter each <li>
         $('.btn-navbar').click(function() {
-          console.log("wow");
+          $('.mobile-menu').show("slow");
+        });
+        $('.glyphicon-remove').click(function() {
+          $('.mobile-menu').hide("slow");
         });
       },
       finalize: function() {

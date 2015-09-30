@@ -15,14 +15,8 @@
         <a class="brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?= get_template_directory_uri() . '/dist/images/logo_white_small.svg'; ?>"></a>
         <div type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         </div>
-        <div class="nav-collapse collapse">
-          <?php
-          if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-          endif;
-          ?>
-        </div><!--/.nav-collapse -->
       </div>
     </div>
+    <?php get_template_part('templates/mobile-menu'); ?>
   </nav>
 </header>
