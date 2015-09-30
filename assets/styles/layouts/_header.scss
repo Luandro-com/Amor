@@ -52,8 +52,13 @@
   padding: 0 10px;
 }
 //Cousel
-.amor-corousel {
+.amor-carousel {
   clear: both;
+  @media (max-width: 768px) {
+    top: 30px;
+    border: 1px solid $dourado;
+    padding: 3px;
+  }
 }
 .amor-carousel-img {
   width: 100%;

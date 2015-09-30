@@ -36,7 +36,9 @@
           mobileFirst: true
         });
         // Menu onClick, fade in, animate enter each <li>
-        $('.btn-navbar').on('click', console.log("clicked:"));
+        $('.btn-navbar').click(function() {
+          console.log("wow");
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
