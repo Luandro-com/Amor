@@ -1,10 +1,11 @@
+/* Mobile Menu */
 .mobile-menu {
   display: none;
   min-height: 100%;
   min-width: 100%;
   background: $rosa;
   z-index: 99;
-  overflow: hidden;
+  overflow-y:hidden;
   position: fixed;
   top: 0;
 }
@@ -22,16 +23,91 @@
 .mobile-menu img {
   float: left;
 }
+.mobile-menu ul {
+  padding-top: 80px;
+}
 .mobile-menu ul li {
   width: 100%;
   text-align: center;
 }
 .mobile-menu ul .current_page_item {
-  background: none;
-  padding-top: 80px;
+  background: rgba(255,255,255,0.3);
+  color: $dourado;
 }
 .mobile-menu ul li a {
   font-size: 1.5em;
   color: white;
   font-family: 'Dancing Script', cursive;
+}
+/* Desktop Menu */
+.ribbon {
+  z-index: 2;
+ width: 85%;
+ position: relative;
+ background: $rosa;
+ color: #fff;
+ text-align: center;
+ padding: 0.5em 1em; /* Adjust to suit */
+ margin: -2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid $rosa;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #AE636D transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+.ribbon-content ul li {
+  display: inline-block;
+}
+.ribbon-content ul li a {
+  font-family: 'Dancing Script', cursive;
+  color: white !important;
+  font-size: 0.8em;
+  transition: all 0.5s ease;
+
+}
+.ribbon-content ul li a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  content: "";
+  transition: all 0.5s ease;
+}
+.ribbon-content ul li a:hover {
+  background: none;
+}
+.ribbon-content ul li a:hover:after {
+  width: 100%;
 }

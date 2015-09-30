@@ -38,9 +38,11 @@
         // Menu onClick, fade in, animate enter each <li>
         $('.btn-navbar').click(function() {
           $('.mobile-menu').show("slow");
+          $('body').css('overflow-y', 'hidden;');
         });
         $('.glyphicon-remove').click(function() {
           $('.mobile-menu').hide("slow");
+          $('body').css('overflow-y', 'show;');
         });
       },
       finalize: function() {

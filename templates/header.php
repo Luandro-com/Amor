@@ -9,6 +9,15 @@
         <?php endif; ?>
     </div>
   </a>
+  <div class="ribbon desktop">
+    <nav class="ribbon-content">
+      <?php
+        if (has_nav_menu('primary_navigation')) :
+          wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+        endif;
+      ?>
+    </nav>
+  </div>
   <nav class="navbar mobile">
     <div class="navbar-inner">
       <div class="container">
