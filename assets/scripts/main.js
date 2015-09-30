@@ -21,8 +21,11 @@
         // JavaScript to be fired on all pages
         // Flowtype for responsive font size
         $('body').flowtype({
-         minimum : 500,
-         maximum : 1200
+         inimum   : 500,
+         maximum   : 1200,
+         minFont   : 12,
+         maxFont   : 28,
+         fontRatio : 30
         });
         //Smart navbar with headroom
         $('.navbar').headroom();
@@ -44,6 +47,18 @@
           $('.mobile-menu').hide("slow");
           $('body').css('overflow-y', 'show;');
         });
+        //Newsletter
+        $('.newsletter-email').attr("value", "Seu e-mail...");
+        //Change font on focus
+        $('.newsletter-email, .search-field').focusin(function () {
+          $(this).css('font-family', 'arial').css('font-size', '0.8em');
+        });
+        $('.newsletter-email, .search-field').focusout(function () {
+          $(this).css('font-family', 'arial').css('font-size', '0.8em');
+        });
+        //Mudar placeholder da area de pesquisa
+        // $('.search-field').attr("placeholder", "Buscar...");
+        //FIM JS
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

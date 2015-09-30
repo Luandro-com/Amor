@@ -29,7 +29,7 @@
 .nav-collapse a {
   color: white;
 }
-//Page-header
+/* Page-header */
 .amor-boxed {
   border: 1px solid $dourado;
   padding: 10px;
@@ -51,8 +51,9 @@
   font-family: 'Dancing Script', cursive;
   padding: 0 10px;
 }
-//Cousel
+/* Carousel */
 .amor-carousel {
+  border: 1px solid $dourado;
   clear: both;
   @media (max-width: 768px) {
     top: 30px;

@@ -1,0 +1,47 @@
+/* Newsletter */
+.widget_newsletterwidget {
+  border: 1px solid $dourado;
+  padding: 10px;
+
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  input {
+    height: 50px;
+    font-family: 'Dancing Script', cursive;
+    padding-left: 15px;
+    width: 100%;
+    border: 1px solid $dourado;
+    background: url(../images/light_noise_diagonal.png);
+  }
+}
+/* Search */
+.widget_search {
+  border: 1px solid $dourado;
+  padding: 10px;
+  margin: 15px 0;
+
+  .search-field {
+
+  }
+  .input-group {
+    font-family: 'Dancing Script', cursive;
+    padding-left: 15px;
+    width: 100%;
+    border: 1px solid $dourado;
+    background: url(../images/light_noise_diagonal.png);
+  }
+  .input, input[type="search"] {
+    height: 50px;
+    color: black;
+    background: url(../images/light_noise_diagonal.png);
+    border: none;
+  }
+  button {
+    border: none;
+    background: url(../images/light_noise_diagonal.png);
+    color: $rosa;
+    float: right;
+  }
+}

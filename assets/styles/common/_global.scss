@@ -30,3 +30,8 @@ h2 { font-size: 2em; }
 .center {
   text-align: center;
 }
+.content {
+  border: 1px solid $dourado;
+  background: rgba(255,255,255,0.5);
+  padding-bottom: 2em;
+}
